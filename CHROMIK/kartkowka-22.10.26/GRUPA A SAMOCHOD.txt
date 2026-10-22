@@ -1,0 +1,71 @@
+GRUPA A (samochod):
+
+class Program
+{
+    static void Main(string[] args)
+    {
+        Samochod samochod = new Samochod("Toyota", "Yaris");
+        Samochod samochod2 = new Samochod("Toyota", "Yaris", "Beznzyna");
+    }
+}
+
+class Samochod
+{
+
+    private string marka;
+    private string model;
+    private string rodzajPaliwa;
+
+    public Samochod(string marka, string model)
+    {
+        this.marka = marka;
+        this.model = model;
+
+        Console.WriteLine("konstruktor 1");
+    }
+
+    public Samochod(string marka, string model, string rodzajPaliwa) : this(marka, model)
+    {
+        this.rodzajPaliwa = rodzajPaliwa;
+        Console.WriteLine("konstruktor 2");
+    }
+}
+
+
+
+-=-=-=-=--=-=-=-=--=-=-=-=--=-=-=-=--=-=-=-=--=-=-=-=--=-=-=-=--=-=-=-=--=-=-=-=--=-=-=-=--=-=-=-=--=-=-=-=--=-=-=-=--=-=-=-=-
+
+/*
+
+Bez private:
+
+class Program
+{
+    static void Main(string[] args)
+    {
+        Samochod samochod = new Samochod("Toyota", "Yaris");
+        Samochod samochod2 = new Samochod("Toyota", "Yaris", "Beznzyna");
+    }
+}
+
+class Samochod
+{
+
+
+    public Samochod(string marka, string model)
+    {
+        marka = marka;
+        model = model;
+
+        Console.WriteLine("konstruktor 1");
+    }
+
+    public Samochod(string marka, string model, string rodzajPaliwa) : this(marka, model)
+    {
+        rodzajPaliwa = rodzajPaliwa;
+
+        Console.WriteLine("konstruktor 2");
+    }
+}
+
+*/

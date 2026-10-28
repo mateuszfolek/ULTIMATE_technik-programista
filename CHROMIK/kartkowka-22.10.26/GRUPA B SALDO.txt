@@ -1,0 +1,43 @@
+GRUPA B (saldo):
+class Program
+{
+    public static void Main(string[] args)
+    {
+        KontoBankowe kontoBankowe = new(56);
+
+        double konto = kontoBankowe.saldo;
+
+        kontoBankowe.saldo = 67;
+    }
+}
+
+class KontoBankowe
+{
+    private double _saldo {  get; set; }
+    public double saldo
+    {
+        get { return _saldo; }
+        set
+        {
+            if (_saldo > 0)
+                _saldo = value;
+        }
+    }
+
+    public KontoBankowe(double saldoPoczątkowe)
+    {
+        _saldo = saldoPoczątkowe;
+    }
+}
+
+
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+Nowe z 22.10.2026:
+
+class Program{
+static void Main(string[] args){
+
+
+}
+}

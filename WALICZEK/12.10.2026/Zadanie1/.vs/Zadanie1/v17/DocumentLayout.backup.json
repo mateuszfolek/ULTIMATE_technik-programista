@@ -1,0 +1,53 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\programista\\Desktop\\aplikacje\\12.10.2026\\Zadanie1\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{EC9A8B2F-DA19-422B-96B4-608C93A058CF}|Zadanie1.csproj|c:\\users\\programista\\desktop\\aplikacje\\12.10.2026\\zadanie1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EC9A8B2F-DA19-422B-96B4-608C93A058CF}|Zadanie1.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\programista\\Desktop\\12.10.2026\\Zadanie1.Test\\Test1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\programista\\Desktop\\aplikacje\\12.10.2026\\Zadanie1\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\programista\\Desktop\\aplikacje\\12.10.2026\\Zadanie1\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAABkAAAAAAAAAAAAgwBsAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-12T06:11:55.14Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Test1.cs",
+              "DocumentMoniker": "C:\\Users\\programista\\Desktop\\12.10.2026\\Zadanie1.Test\\Test1.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\12.10.2026\\Zadanie1.Test\\Test1.cs",
+              "ToolTip": "C:\\Users\\programista\\Desktop\\12.10.2026\\Zadanie1.Test\\Test1.cs",
+              "RelativeToolTip": "..\\..\\..\\12.10.2026\\Zadanie1.Test\\Test1.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-12T06:23:57.919Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

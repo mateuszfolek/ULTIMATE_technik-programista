@@ -1,0 +1,14 @@
+C:\Users\programista\Desktop\Filip Wróbel\aplikacje konsolowe\07.09.26\SumaElementow\bin\Debug\net8.0\SumaElementow.exe
+C:\Users\programista\Desktop\Filip Wróbel\aplikacje konsolowe\07.09.26\SumaElementow\bin\Debug\net8.0\SumaElementow.deps.json
+C:\Users\programista\Desktop\Filip Wróbel\aplikacje konsolowe\07.09.26\SumaElementow\bin\Debug\net8.0\SumaElementow.runtimeconfig.json
+C:\Users\programista\Desktop\Filip Wróbel\aplikacje konsolowe\07.09.26\SumaElementow\bin\Debug\net8.0\SumaElementow.dll
+C:\Users\programista\Desktop\Filip Wróbel\aplikacje konsolowe\07.09.26\SumaElementow\bin\Debug\net8.0\SumaElementow.pdb
+C:\Users\programista\Desktop\Filip Wróbel\aplikacje konsolowe\07.09.26\SumaElementow\obj\Debug\net8.0\SumaElementow.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\programista\Desktop\Filip Wróbel\aplikacje konsolowe\07.09.26\SumaElementow\obj\Debug\net8.0\SumaElementow.AssemblyInfoInputs.cache
+C:\Users\programista\Desktop\Filip Wróbel\aplikacje konsolowe\07.09.26\SumaElementow\obj\Debug\net8.0\SumaElementow.AssemblyInfo.cs
+C:\Users\programista\Desktop\Filip Wróbel\aplikacje konsolowe\07.09.26\SumaElementow\obj\Debug\net8.0\SumaElementow.csproj.CoreCompileInputs.cache
+C:\Users\programista\Desktop\Filip Wróbel\aplikacje konsolowe\07.09.26\SumaElementow\obj\Debug\net8.0\SumaElementow.dll
+C:\Users\programista\Desktop\Filip Wróbel\aplikacje konsolowe\07.09.26\SumaElementow\obj\Debug\net8.0\refint\SumaElementow.dll
+C:\Users\programista\Desktop\Filip Wróbel\aplikacje konsolowe\07.09.26\SumaElementow\obj\Debug\net8.0\SumaElementow.pdb
+C:\Users\programista\Desktop\Filip Wróbel\aplikacje konsolowe\07.09.26\SumaElementow\obj\Debug\net8.0\SumaElementow.genruntimeconfig.cache
+C:\Users\programista\Desktop\Filip Wróbel\aplikacje konsolowe\07.09.26\SumaElementow\obj\Debug\net8.0\ref\SumaElementow.dll

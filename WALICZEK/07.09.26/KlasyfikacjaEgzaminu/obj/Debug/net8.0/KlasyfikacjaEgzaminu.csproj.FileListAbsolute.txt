@@ -1,0 +1,15 @@
+C:\Users\programista\Desktop\aplikacje\07.09.26\KlasyfikacjaEgzaminu\bin\Debug\net8.0\KlasyfikacjaEgzaminu.exe
+C:\Users\programista\Desktop\aplikacje\07.09.26\KlasyfikacjaEgzaminu\bin\Debug\net8.0\KlasyfikacjaEgzaminu.deps.json
+C:\Users\programista\Desktop\aplikacje\07.09.26\KlasyfikacjaEgzaminu\bin\Debug\net8.0\KlasyfikacjaEgzaminu.runtimeconfig.json
+C:\Users\programista\Desktop\aplikacje\07.09.26\KlasyfikacjaEgzaminu\bin\Debug\net8.0\KlasyfikacjaEgzaminu.dll
+C:\Users\programista\Desktop\aplikacje\07.09.26\KlasyfikacjaEgzaminu\bin\Debug\net8.0\KlasyfikacjaEgzaminu.pdb
+C:\Users\programista\Desktop\aplikacje\07.09.26\KlasyfikacjaEgzaminu\obj\Debug\net8.0\KlasyfikacjaEgzaminu.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\programista\Desktop\aplikacje\07.09.26\KlasyfikacjaEgzaminu\obj\Debug\net8.0\KlasyfikacjaEgzaminu.AssemblyInfoInputs.cache
+C:\Users\programista\Desktop\aplikacje\07.09.26\KlasyfikacjaEgzaminu\obj\Debug\net8.0\KlasyfikacjaEgzaminu.AssemblyInfo.cs
+C:\Users\programista\Desktop\aplikacje\07.09.26\KlasyfikacjaEgzaminu\obj\Debug\net8.0\KlasyfikacjaEgzaminu.csproj.CoreCompileInputs.cache
+C:\Users\programista\Desktop\aplikacje\07.09.26\KlasyfikacjaEgzaminu\obj\Debug\net8.0\KlasyfikacjaEgzaminu.sourcelink.json
+C:\Users\programista\Desktop\aplikacje\07.09.26\KlasyfikacjaEgzaminu\obj\Debug\net8.0\KlasyfikacjaEgzaminu.dll
+C:\Users\programista\Desktop\aplikacje\07.09.26\KlasyfikacjaEgzaminu\obj\Debug\net8.0\refint\KlasyfikacjaEgzaminu.dll
+C:\Users\programista\Desktop\aplikacje\07.09.26\KlasyfikacjaEgzaminu\obj\Debug\net8.0\KlasyfikacjaEgzaminu.pdb
+C:\Users\programista\Desktop\aplikacje\07.09.26\KlasyfikacjaEgzaminu\obj\Debug\net8.0\KlasyfikacjaEgzaminu.genruntimeconfig.cache
+C:\Users\programista\Desktop\aplikacje\07.09.26\KlasyfikacjaEgzaminu\obj\Debug\net8.0\ref\KlasyfikacjaEgzaminu.dll

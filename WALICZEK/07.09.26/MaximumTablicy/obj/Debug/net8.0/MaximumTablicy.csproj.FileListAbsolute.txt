@@ -1,0 +1,14 @@
+C:\Users\programista\Desktop\Filip Wróbel\aplikacje konsolowe\07.09.26\MaximumTablicy\obj\Debug\net8.0\MaximumTablicy.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\programista\Desktop\Filip Wróbel\aplikacje konsolowe\07.09.26\MaximumTablicy\obj\Debug\net8.0\MaximumTablicy.AssemblyInfoInputs.cache
+C:\Users\programista\Desktop\Filip Wróbel\aplikacje konsolowe\07.09.26\MaximumTablicy\obj\Debug\net8.0\MaximumTablicy.AssemblyInfo.cs
+C:\Users\programista\Desktop\Filip Wróbel\aplikacje konsolowe\07.09.26\MaximumTablicy\obj\Debug\net8.0\MaximumTablicy.csproj.CoreCompileInputs.cache
+C:\Users\programista\Desktop\Filip Wróbel\aplikacje konsolowe\07.09.26\MaximumTablicy\bin\Debug\net8.0\MaximumTablicy.exe
+C:\Users\programista\Desktop\Filip Wróbel\aplikacje konsolowe\07.09.26\MaximumTablicy\bin\Debug\net8.0\MaximumTablicy.deps.json
+C:\Users\programista\Desktop\Filip Wróbel\aplikacje konsolowe\07.09.26\MaximumTablicy\bin\Debug\net8.0\MaximumTablicy.runtimeconfig.json
+C:\Users\programista\Desktop\Filip Wróbel\aplikacje konsolowe\07.09.26\MaximumTablicy\bin\Debug\net8.0\MaximumTablicy.dll
+C:\Users\programista\Desktop\Filip Wróbel\aplikacje konsolowe\07.09.26\MaximumTablicy\bin\Debug\net8.0\MaximumTablicy.pdb
+C:\Users\programista\Desktop\Filip Wróbel\aplikacje konsolowe\07.09.26\MaximumTablicy\obj\Debug\net8.0\MaximumTablicy.dll
+C:\Users\programista\Desktop\Filip Wróbel\aplikacje konsolowe\07.09.26\MaximumTablicy\obj\Debug\net8.0\refint\MaximumTablicy.dll
+C:\Users\programista\Desktop\Filip Wróbel\aplikacje konsolowe\07.09.26\MaximumTablicy\obj\Debug\net8.0\MaximumTablicy.pdb
+C:\Users\programista\Desktop\Filip Wróbel\aplikacje konsolowe\07.09.26\MaximumTablicy\obj\Debug\net8.0\MaximumTablicy.genruntimeconfig.cache
+C:\Users\programista\Desktop\Filip Wróbel\aplikacje konsolowe\07.09.26\MaximumTablicy\obj\Debug\net8.0\ref\MaximumTablicy.dll

@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\programista\\Desktop\\aplikacje\\07.09.26\\KlasyfikacjaEgzaminu\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{B3E64AB1-FDA9-418D-9E9D-E66F25BACF04}|KlasyfikacjaEgzaminu.csproj|c:\\users\\programista\\desktop\\aplikacje\\07.09.26\\klasyfikacjaegzaminu\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B3E64AB1-FDA9-418D-9E9D-E66F25BACF04}|KlasyfikacjaEgzaminu.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\programista\\Desktop\\aplikacje\\07.09.26\\KlasyfikacjaEgzaminu\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\programista\\Desktop\\aplikacje\\07.09.26\\KlasyfikacjaEgzaminu\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAAABgAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-07T09:54:47.15Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

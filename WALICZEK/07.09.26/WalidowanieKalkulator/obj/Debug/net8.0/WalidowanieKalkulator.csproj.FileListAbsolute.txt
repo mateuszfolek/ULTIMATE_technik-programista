@@ -1,0 +1,15 @@
+C:\Users\programista\Desktop\aplikacje\07.09.26\WalidowanieKalkulator\bin\Debug\net8.0\WalidowanieKalkulator.exe
+C:\Users\programista\Desktop\aplikacje\07.09.26\WalidowanieKalkulator\bin\Debug\net8.0\WalidowanieKalkulator.deps.json
+C:\Users\programista\Desktop\aplikacje\07.09.26\WalidowanieKalkulator\bin\Debug\net8.0\WalidowanieKalkulator.runtimeconfig.json
+C:\Users\programista\Desktop\aplikacje\07.09.26\WalidowanieKalkulator\bin\Debug\net8.0\WalidowanieKalkulator.dll
+C:\Users\programista\Desktop\aplikacje\07.09.26\WalidowanieKalkulator\bin\Debug\net8.0\WalidowanieKalkulator.pdb
+C:\Users\programista\Desktop\aplikacje\07.09.26\WalidowanieKalkulator\obj\Debug\net8.0\WalidowanieKalkulator.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\programista\Desktop\aplikacje\07.09.26\WalidowanieKalkulator\obj\Debug\net8.0\WalidowanieKalkulator.AssemblyInfoInputs.cache
+C:\Users\programista\Desktop\aplikacje\07.09.26\WalidowanieKalkulator\obj\Debug\net8.0\WalidowanieKalkulator.AssemblyInfo.cs
+C:\Users\programista\Desktop\aplikacje\07.09.26\WalidowanieKalkulator\obj\Debug\net8.0\WalidowanieKalkulator.csproj.CoreCompileInputs.cache
+C:\Users\programista\Desktop\aplikacje\07.09.26\WalidowanieKalkulator\obj\Debug\net8.0\WalidowanieKalkulator.sourcelink.json
+C:\Users\programista\Desktop\aplikacje\07.09.26\WalidowanieKalkulator\obj\Debug\net8.0\WalidowanieKalkulator.dll
+C:\Users\programista\Desktop\aplikacje\07.09.26\WalidowanieKalkulator\obj\Debug\net8.0\refint\WalidowanieKalkulator.dll
+C:\Users\programista\Desktop\aplikacje\07.09.26\WalidowanieKalkulator\obj\Debug\net8.0\WalidowanieKalkulator.pdb
+C:\Users\programista\Desktop\aplikacje\07.09.26\WalidowanieKalkulator\obj\Debug\net8.0\WalidowanieKalkulator.genruntimeconfig.cache
+C:\Users\programista\Desktop\aplikacje\07.09.26\WalidowanieKalkulator\obj\Debug\net8.0\ref\WalidowanieKalkulator.dll

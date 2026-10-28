@@ -1,0 +1,14 @@
+C:\Users\programista\Desktop\Filip Wróbel\aplikacje konsolowe\07.09.26\MinumumTablicy\bin\Debug\net8.0\MinumumTablicy.exe
+C:\Users\programista\Desktop\Filip Wróbel\aplikacje konsolowe\07.09.26\MinumumTablicy\bin\Debug\net8.0\MinumumTablicy.deps.json
+C:\Users\programista\Desktop\Filip Wróbel\aplikacje konsolowe\07.09.26\MinumumTablicy\bin\Debug\net8.0\MinumumTablicy.runtimeconfig.json
+C:\Users\programista\Desktop\Filip Wróbel\aplikacje konsolowe\07.09.26\MinumumTablicy\bin\Debug\net8.0\MinumumTablicy.dll
+C:\Users\programista\Desktop\Filip Wróbel\aplikacje konsolowe\07.09.26\MinumumTablicy\bin\Debug\net8.0\MinumumTablicy.pdb
+C:\Users\programista\Desktop\Filip Wróbel\aplikacje konsolowe\07.09.26\MinumumTablicy\obj\Debug\net8.0\MinumumTablicy.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\programista\Desktop\Filip Wróbel\aplikacje konsolowe\07.09.26\MinumumTablicy\obj\Debug\net8.0\MinumumTablicy.AssemblyInfoInputs.cache
+C:\Users\programista\Desktop\Filip Wróbel\aplikacje konsolowe\07.09.26\MinumumTablicy\obj\Debug\net8.0\MinumumTablicy.AssemblyInfo.cs
+C:\Users\programista\Desktop\Filip Wróbel\aplikacje konsolowe\07.09.26\MinumumTablicy\obj\Debug\net8.0\MinumumTablicy.csproj.CoreCompileInputs.cache
+C:\Users\programista\Desktop\Filip Wróbel\aplikacje konsolowe\07.09.26\MinumumTablicy\obj\Debug\net8.0\MinumumTablicy.dll
+C:\Users\programista\Desktop\Filip Wróbel\aplikacje konsolowe\07.09.26\MinumumTablicy\obj\Debug\net8.0\refint\MinumumTablicy.dll
+C:\Users\programista\Desktop\Filip Wróbel\aplikacje konsolowe\07.09.26\MinumumTablicy\obj\Debug\net8.0\MinumumTablicy.pdb
+C:\Users\programista\Desktop\Filip Wróbel\aplikacje konsolowe\07.09.26\MinumumTablicy\obj\Debug\net8.0\MinumumTablicy.genruntimeconfig.cache
+C:\Users\programista\Desktop\Filip Wróbel\aplikacje konsolowe\07.09.26\MinumumTablicy\obj\Debug\net8.0\ref\MinumumTablicy.dll

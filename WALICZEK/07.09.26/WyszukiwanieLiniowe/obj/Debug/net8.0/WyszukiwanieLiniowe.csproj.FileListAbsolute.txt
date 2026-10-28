@@ -1,0 +1,15 @@
+C:\Users\programista\Desktop\aplikacje\07.09.26\WyszukiwanieLiniowe\bin\Debug\net8.0\WyszukiwanieLiniowe.exe
+C:\Users\programista\Desktop\aplikacje\07.09.26\WyszukiwanieLiniowe\bin\Debug\net8.0\WyszukiwanieLiniowe.deps.json
+C:\Users\programista\Desktop\aplikacje\07.09.26\WyszukiwanieLiniowe\bin\Debug\net8.0\WyszukiwanieLiniowe.runtimeconfig.json
+C:\Users\programista\Desktop\aplikacje\07.09.26\WyszukiwanieLiniowe\bin\Debug\net8.0\WyszukiwanieLiniowe.dll
+C:\Users\programista\Desktop\aplikacje\07.09.26\WyszukiwanieLiniowe\bin\Debug\net8.0\WyszukiwanieLiniowe.pdb
+C:\Users\programista\Desktop\aplikacje\07.09.26\WyszukiwanieLiniowe\obj\Debug\net8.0\WyszukiwanieLiniowe.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\programista\Desktop\aplikacje\07.09.26\WyszukiwanieLiniowe\obj\Debug\net8.0\WyszukiwanieLiniowe.AssemblyInfoInputs.cache
+C:\Users\programista\Desktop\aplikacje\07.09.26\WyszukiwanieLiniowe\obj\Debug\net8.0\WyszukiwanieLiniowe.AssemblyInfo.cs
+C:\Users\programista\Desktop\aplikacje\07.09.26\WyszukiwanieLiniowe\obj\Debug\net8.0\WyszukiwanieLiniowe.csproj.CoreCompileInputs.cache
+C:\Users\programista\Desktop\aplikacje\07.09.26\WyszukiwanieLiniowe\obj\Debug\net8.0\WyszukiwanieLiniowe.sourcelink.json
+C:\Users\programista\Desktop\aplikacje\07.09.26\WyszukiwanieLiniowe\obj\Debug\net8.0\WyszukiwanieLiniowe.dll
+C:\Users\programista\Desktop\aplikacje\07.09.26\WyszukiwanieLiniowe\obj\Debug\net8.0\refint\WyszukiwanieLiniowe.dll
+C:\Users\programista\Desktop\aplikacje\07.09.26\WyszukiwanieLiniowe\obj\Debug\net8.0\WyszukiwanieLiniowe.pdb
+C:\Users\programista\Desktop\aplikacje\07.09.26\WyszukiwanieLiniowe\obj\Debug\net8.0\WyszukiwanieLiniowe.genruntimeconfig.cache
+C:\Users\programista\Desktop\aplikacje\07.09.26\WyszukiwanieLiniowe\obj\Debug\net8.0\ref\WyszukiwanieLiniowe.dll

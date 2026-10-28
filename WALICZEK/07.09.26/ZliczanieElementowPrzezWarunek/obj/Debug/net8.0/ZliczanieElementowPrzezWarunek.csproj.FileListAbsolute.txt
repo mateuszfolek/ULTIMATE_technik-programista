@@ -1,0 +1,15 @@
+C:\Users\programista\Desktop\aplikacje\07.09.26\ZliczanieElementowPrzezWarunek\bin\Debug\net8.0\ZliczanieElementowPrzezWarunek.exe
+C:\Users\programista\Desktop\aplikacje\07.09.26\ZliczanieElementowPrzezWarunek\bin\Debug\net8.0\ZliczanieElementowPrzezWarunek.deps.json
+C:\Users\programista\Desktop\aplikacje\07.09.26\ZliczanieElementowPrzezWarunek\bin\Debug\net8.0\ZliczanieElementowPrzezWarunek.runtimeconfig.json
+C:\Users\programista\Desktop\aplikacje\07.09.26\ZliczanieElementowPrzezWarunek\bin\Debug\net8.0\ZliczanieElementowPrzezWarunek.dll
+C:\Users\programista\Desktop\aplikacje\07.09.26\ZliczanieElementowPrzezWarunek\bin\Debug\net8.0\ZliczanieElementowPrzezWarunek.pdb
+C:\Users\programista\Desktop\aplikacje\07.09.26\ZliczanieElementowPrzezWarunek\obj\Debug\net8.0\ZliczanieElementowPrzezWarunek.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\programista\Desktop\aplikacje\07.09.26\ZliczanieElementowPrzezWarunek\obj\Debug\net8.0\ZliczanieElementowPrzezWarunek.AssemblyInfoInputs.cache
+C:\Users\programista\Desktop\aplikacje\07.09.26\ZliczanieElementowPrzezWarunek\obj\Debug\net8.0\ZliczanieElementowPrzezWarunek.AssemblyInfo.cs
+C:\Users\programista\Desktop\aplikacje\07.09.26\ZliczanieElementowPrzezWarunek\obj\Debug\net8.0\ZliczanieElementowPrzezWarunek.csproj.CoreCompileInputs.cache
+C:\Users\programista\Desktop\aplikacje\07.09.26\ZliczanieElementowPrzezWarunek\obj\Debug\net8.0\ZliczanieElementowPrzezWarunek.sourcelink.json
+C:\Users\programista\Desktop\aplikacje\07.09.26\ZliczanieElementowPrzezWarunek\obj\Debug\net8.0\ZliczanieElementowPrzezWarunek.dll
+C:\Users\programista\Desktop\aplikacje\07.09.26\ZliczanieElementowPrzezWarunek\obj\Debug\net8.0\refint\ZliczanieElementowPrzezWarunek.dll
+C:\Users\programista\Desktop\aplikacje\07.09.26\ZliczanieElementowPrzezWarunek\obj\Debug\net8.0\ZliczanieElementowPrzezWarunek.pdb
+C:\Users\programista\Desktop\aplikacje\07.09.26\ZliczanieElementowPrzezWarunek\obj\Debug\net8.0\ZliczanieElementowPrzezWarunek.genruntimeconfig.cache
+C:\Users\programista\Desktop\aplikacje\07.09.26\ZliczanieElementowPrzezWarunek\obj\Debug\net8.0\ref\ZliczanieElementowPrzezWarunek.dll

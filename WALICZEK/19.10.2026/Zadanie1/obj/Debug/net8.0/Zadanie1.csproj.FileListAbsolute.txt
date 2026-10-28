@@ -1,0 +1,14 @@
+C:\Users\programista\Desktop\19.10.2026\Zadanie1\bin\Debug\net8.0\Zadanie1.exe
+C:\Users\programista\Desktop\19.10.2026\Zadanie1\bin\Debug\net8.0\Zadanie1.deps.json
+C:\Users\programista\Desktop\19.10.2026\Zadanie1\bin\Debug\net8.0\Zadanie1.runtimeconfig.json
+C:\Users\programista\Desktop\19.10.2026\Zadanie1\bin\Debug\net8.0\Zadanie1.dll
+C:\Users\programista\Desktop\19.10.2026\Zadanie1\bin\Debug\net8.0\Zadanie1.pdb
+C:\Users\programista\Desktop\19.10.2026\Zadanie1\obj\Debug\net8.0\Zadanie1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\programista\Desktop\19.10.2026\Zadanie1\obj\Debug\net8.0\Zadanie1.AssemblyInfoInputs.cache
+C:\Users\programista\Desktop\19.10.2026\Zadanie1\obj\Debug\net8.0\Zadanie1.AssemblyInfo.cs
+C:\Users\programista\Desktop\19.10.2026\Zadanie1\obj\Debug\net8.0\Zadanie1.csproj.CoreCompileInputs.cache
+C:\Users\programista\Desktop\19.10.2026\Zadanie1\obj\Debug\net8.0\Zadanie1.dll
+C:\Users\programista\Desktop\19.10.2026\Zadanie1\obj\Debug\net8.0\refint\Zadanie1.dll
+C:\Users\programista\Desktop\19.10.2026\Zadanie1\obj\Debug\net8.0\Zadanie1.pdb
+C:\Users\programista\Desktop\19.10.2026\Zadanie1\obj\Debug\net8.0\Zadanie1.genruntimeconfig.cache
+C:\Users\programista\Desktop\19.10.2026\Zadanie1\obj\Debug\net8.0\ref\Zadanie1.dll

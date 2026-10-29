@@ -1,0 +1,120 @@
+using System.Text;
+using System.Windows;
+using System.Windows.Controls;
+using System.Windows.Data;
+using System.Windows.Documents;
+using System.Windows.Input;
+using System.Windows.Media;
+using System.Windows.Media.Imaging;
+using System.Windows.Navigation;
+using System.Windows.Shapes;
+using System.Windows.Threading;
+
+namespace Windy
+{
+    /// <summary>
+    /// Interaction logic for MainWindow.xaml
+    /// </summary>
+    public partial class MainWindow : Window
+    {
+        private int wybranePietro;
+        private int aktualnePietro;
+
+        private int aktualna;
+        private int celowa;
+
+        private DispatcherTimer timer;
+        public MainWindow()
+        {
+            InitializeComponent();
+            //WyswietlaniePietra();
+
+
+            //stowrzenie timera
+            timer = new DispatcherTimer();
+            timer.Interval = TimeSpan.FromSeconds(1);
+            timer.Tick += Timer_Tick;
+
+
+        }
+
+        //niepotrzebne, missclick
+        private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+        }
+
+
+        //sprawdzanie ktore pietro jest wybrane 
+        //przypisane wybranego pietra do zmiennej "pietro"
+        private void wybierzpietro_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            if (wybierzpietro.SelectedItem != null)
+            {
+                if (wybierzpietro.SelectedItem is ComboBoxItem item)
+                {
+                    if (int.TryParse(item.Content.ToString(), out int pietro))
+                    {
+                        wybranePietro = pietro; 
+                    }
+                }
+                else if (wybierzpietro.SelectedItem is int pietro)
+                {
+                    wybranePietro = pietro; 
+                }
+            }
+        }
+
+
+        public void WyswietlaniePietra()
+        {
+            nrpietra.Content = wybierzpietro.Text;
+        }
+
+        //klikniecie przycisku
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            aktualna = aktualnePietro;
+            celowa = wybranePietro;
+
+            if (aktualna == celowa)
+            {
+                nrpietra.Content = aktualna.ToString();
+                return;
+            }
+
+            timer.Start();
+        }
+
+        //1 tick timera (1 liczba)
+        private void Timer_Tick (object sender, EventArgs e)
+        {
+            //gdy jest wieksza to dodaje
+            if (aktualna < celowa)
+            {
+                aktualna++;
+            }
+            //gdy mniejsza odejmuje
+            else if (aktualna > celowa) 
+            {
+               aktualna--;
+            }
+
+            //i wyswietla ja w label
+
+            nrpietra.Content = aktualna.ToString();
+
+
+            //jesli wkoncu sa takie same to stopuje timer (dodawanie lub odejmowanie to zalezy od warunku poczatkowego)
+            if (aktualna == celowa)
+            {
+                timer.Stop();
+
+
+                //i ustawia ostatnio wybrana liczbe jako aktualna zeby od niej zaczac kolejne odliczanie
+                aktualnePietro = aktualna;
+            }
+        }
+
+    }
+}

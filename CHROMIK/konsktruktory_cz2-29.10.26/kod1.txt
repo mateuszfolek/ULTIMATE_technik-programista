@@ -1,0 +1,36 @@
+namespace ConsoleApp1.ZDI
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            FileLogger logger = new FileLogger();
+            ServiceOrder serviceOrder   = new ServiceOrder(logger);
+        }
+    }
+    public class FileLogger
+    {
+        public void Log(string message)
+        {
+            Console.WriteLine(message);
+        }
+    }
+
+    public class ServiceOrder
+    {
+        private readonly FileLogger logger;
+        
+      //readonly oznacza, że pole można przypisać tylko na etapie deklaracji
+      //nie możemy zmienić po utworzeniu obiektu
+
+        public ServiceOrder(FileLogger logger)
+        {
+            this.logger = logger;
+        }
+
+        public void CreateOrder()
+        {
+            logger.Log("Tworzymy nowe zamówienie");
+        }
+    }
+}

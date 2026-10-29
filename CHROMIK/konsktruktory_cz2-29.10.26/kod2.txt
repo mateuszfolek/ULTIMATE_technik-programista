@@ -1,0 +1,29 @@
+using System;
+using System.Collections.Generic;
+using System.Text;
+
+namespace ConsoleApp1.BezDI
+{
+    public class FileLogger
+    {
+        public void Log(string message)
+        {
+            Console.WriteLine(message);
+        }
+    }
+
+    public class ServiceOrder
+    {
+        private readonly FileLogger logger;
+
+        public ServiceOrder()
+        {
+            this.logger = new FileLogger();
+        }
+
+        public void CreateOrder()
+        {
+            logger.Log("Tworzymy nowe zamówienie");
+        }
+    }
+}

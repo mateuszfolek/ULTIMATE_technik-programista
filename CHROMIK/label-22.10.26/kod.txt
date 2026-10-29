@@ -1,0 +1,74 @@
+class Program
+{
+    static void Main(string[] args)
+    {
+        Printer printer = new Printer();
+
+        LabelTemplate labelTemplate = new LabelTemplate();
+        labelTemplate.data = $"{DateTime.Now.ToString()} ABCD1234";
+
+        //Kontrolne sprawdzenie zawartości etykiety
+        Console.WriteLine(labelTemplate.data);
+
+        //Przekazuję etykietę do drukarki
+        printer.SetLabelToPrint(labelTemplate);
+
+
+        //Przychodzą nowe dane ze sterownika
+        labelTemplate.data = $"{DateTime.Now.ToString()} ABCD5678";
+        //Drukuję etykietę
+        printer.PrintLabel();
+
+        //Przychodzą nowe dane ze sterownika
+        labelTemplate.data = $"{DateTime.Now.ToString()} EFGH0123";
+        //Klonuję obiekt
+        var snapshot = (LabelTemplate)labelTemplate.CloneMyLabelTemplate();
+        //Przekazuję etykietę do drukarki
+        printer.SetLabelToPrint(snapshot);
+
+        //Przychodzą nowe dane ze sterownika
+        labelTemplate.data = $"{DateTime.Now.ToString()} FFFF4444";
+        //Drukuję etykietę
+        printer.PrintLabel();
+        //Kontrola aktualnej etykiety
+        Console.WriteLine(labelTemplate.data);
+
+
+    }
+}
+
+class Printer
+{
+    public LabelTemplate labelTemplate;
+
+    public void SetLabelToPrint(LabelTemplate labelTemplate)
+    {
+        this.labelTemplate = labelTemplate;
+    }
+
+    public void PrintLabel()
+    {
+        Console.WriteLine(labelTemplate.data);
+    }
+
+}
+
+
+class LabelTemplate
+{
+    public string data;
+
+    public LabelTemplate() { }
+
+    public LabelTemplate(string data)
+    {
+        this.data = data;
+    }
+
+    public LabelTemplate(LabelTemplate other) : this(other.data)
+    {
+
+    }
+
+    public LabelTemplate CloneMyLabelTemplate() => new LabelTemplate(this);
+}

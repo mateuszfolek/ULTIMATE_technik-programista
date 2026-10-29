@@ -1,0 +1,59 @@
+class Program
+{
+    static void Main(string[] args)
+    {
+        Program program = new Program();
+        program.UruchomZegarynke();
+
+        Console.ReadKey();
+    }
+
+    private void UruchomZegarynke()
+    {
+        Zegarynka zegarynka = new Zegarynka();
+        zegarynka.ZwrocAktualnyCzas += Zegarynka_ZwrocAktualnyCzas;
+    }
+
+    private void Zegarynka_ZwrocAktualnyCzas(object? sender, string czas)
+    {
+        Console.Clear();
+        Console.WriteLine(czas);
+    }
+}
+
+class Zegarynka
+{
+    private int numerZegarynki;
+    private System.Timers.Timer timer;
+    public event EventHandler<string>? ZwrocAktualnyCzas;
+    public event EventHandler<(string,int)>? ZwrocAktualnyCzasINumer;
+
+    public Zegarynka()
+    {
+        timer = new System.Timers.Timer();
+        timer.Enabled = true;
+        timer.Interval = 1000;
+        timer.Elapsed += Timer_Elapsed;
+        timer.Start();
+    }
+
+    public Zegarynka(int numerZegarynki) 
+    { 
+        this.numerZegarynki = numerZegarynki;
+        timer = new System.Timers.Timer();
+        timer.Enabled = true;
+        timer.Interval = 1000;
+        timer.Elapsed += Timer_Elapsed;
+        timer.Start();
+    }
+
+    private void Timer_Elapsed(object? sender, System.Timers.ElapsedEventArgs e)
+    {
+        PrzekazAktualnyCzas(DateTime.Now.ToString());
+    }
+
+    private void PrzekazAktualnyCzas(string tekst)
+    {
+        ZwrocAktualnyCzas?.Invoke(this, tekst);
+    }
+}

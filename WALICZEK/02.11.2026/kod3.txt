@@ -1,0 +1,90 @@
+using System.Text.RegularExpressions;
+using static System.Net.Mime.MediaTypeNames;
+
+namespace Zdanie3
+{
+    public class Program
+    {
+        //Napisz metode MaksujTelefon(string number), ktora usuwa spacje i dla numeru zlozonego z
+        //dokladnie 9 cyfr zwraca 6 "*" oraz ostatnie 3 cyfry. Inne dane zwracaja blad np:
+        // 123456789 -> ******789
+
+
+        //Napisz metode Normalizuj (string tekst) ktora usuwa spacje na brzegach i zmienia dowolne ciagi bialych znakow na jedna spacje np:
+        //Ala ma\t kota -> Ala ma kota
+
+        //Napisz metode WybierzMiasto(List <string> rekord, string nazwisko). Rekord ma format "Imie;Nazwisko;wiek" np:
+        //["Ala;Waliczek;18","Ola;Paliczek;19"] -> "Waliczek" -> ["Ala"]
+
+        public static void Main(string[] args)
+        {
+            Console.WriteLine("Podaj numer telefonu");
+            string number = Console.ReadLine() ?? "";
+            string wynik = MaksujTelefon(number);
+            Console.WriteLine(wynik);
+
+            Console.WriteLine("Podaj tekst do znormalizowania");
+            string tekst = Console.ReadLine() ?? "";
+            string znormalizowanyTekst = Normalizuj(tekst);
+            Console.WriteLine(znormalizowanyTekst);
+
+            List<string> info = new List<string>() { "Ala;Waliczek;18", "Ola;Paliczek;19" };
+
+            //przekazujemy dane do metody
+            List<string> wynikMiasto = WybierzMiasto(info, "Waliczek");
+            Console.WriteLine(string.Join(", ", wynikMiasto));
+        }
+
+        public static string MaksujTelefon(string number)
+        {
+            //usuwa spacje
+            number = number.Replace(" ", "");
+
+            if (number.Length != 9)
+            {
+                return "blad";
+            }
+
+            //tworzy nowego strina i pierwsze 6 znakow to "*" a reszta to koncowka zmiennej numer od indexu 6
+            return new string('*', 6) + number.Substring(6);
+        }
+
+        public static string Normalizuj(string tekst)
+        {
+            //usuwa biale znaki
+            tekst = tekst.Trim();
+
+
+            //korzysta z klasy regex i zamienia w TEKSCIE biale znaki (czyli \s; + oznacza ze moze byc ich wiecej) na spacje (" ")
+            return Regex.Replace(tekst, @"\s+", " ");
+        }
+
+
+        //rekord to info a nazwisko to "Waliczek"
+        public static List<string> WybierzMiasto(List<string> rekord, string nazwisko)
+        {
+            List<string> wynik = new List<string>();
+
+            //przechodzi po kolei przez wszystkie elementy listy rekord
+            //kazdy element listy zapisuje chwilowo w zmiennej osoba
+            foreach (string osoba in rekord)
+            {
+                //dzieli tekst na czesci w miejscu ;
+                string[] dane = osoba.Split(';');
+
+
+                //sprawdza czy nazwisko zapisane w drugim elemencie tablicy (dane[1])
+                //jest takie samo jak nazwisko przekazane do metody czyli Waliczek
+                if (dane[1] == nazwisko)
+                {
+
+                    //jesli sa takie same to dodaje pierwszy element z listy do listy wynik 
+                    //w tym przypadku jest to imie "Ala"
+                    wynik.Add(dane[0]);
+                }
+            }
+
+            return wynik;
+        }
+    }
+}

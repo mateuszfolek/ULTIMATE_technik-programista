@@ -1,0 +1,75 @@
+using System.Diagnostics;
+using System.Text.RegularExpressions;
+
+namespace Zadanie1
+{
+    public class Program
+    {
+        public static void Main(string[] args)
+        {
+
+            // filtrowanie slow wg prefixu
+            // prefix "Kot"
+            // przyklad: ["Kot","kotek","pies"] -> ["Kot", "kotek"]
+
+            List<string> list = new List<string>()
+            {
+                "Kot",
+                "kotek",
+                "pies",
+                "kon"
+            };
+
+            List<string> listaLiczby = new List<string>()
+            {
+                "Arkadiusz12",
+                "Mo234",
+                "Darek567"
+            };
+
+            string prefix = "kot";
+
+
+            Console.WriteLine("Lista przefiltrowana na podstawie prefixu: kot");
+
+            List<string> newList = FiltrujPrefix(list, prefix);
+            List<string> newList2 = FiltrujPrefix2(list, prefix);
+            List<string> wynik = new List<string>();
+
+            foreach (string tekst in listaLiczby)
+            {
+                wynik.AddRange(PobierzLiczby(tekst));
+            }
+
+
+            Console.WriteLine(string.Join(", ", newList));
+            Console.WriteLine(string.Join(", ", newList2));
+            Console.WriteLine(string.Join(", ", listaLiczby));
+            Console.WriteLine(string.Join(", ", wynik));
+        }
+
+        //METODY
+
+        // przekazuje liste i prefix a zwraca liste
+        public static List<string> FiltrujPrefix(List<string> list, string prefix)
+        {
+            return list
+                .Where(s => s.StartsWith(prefix, StringComparison.OrdinalIgnoreCase)).ToList();
+        }
+
+
+        // zwraca te elementy, gdzie nie ma tego perfixu
+        public static List<string> FiltrujPrefix2(List<string> list, string prefix)
+        {
+            return list.Where(s => !s.StartsWith(prefix, StringComparison.OrdinalIgnoreCase)).ToList();
+        }
+
+        public static List<string> PobierzLiczby(string tekst)
+        {
+            // napisz metode pobierzliczby ktora zawiera liste ciagow cyfr wystepujacych w tekscie
+            // nie konwertuj ich na int aby zachowac zera poczatkowe
+
+            return Regex.Matches(tekst, @"[0-9]+").Select(m => m.Value).ToList();
+        }
+    }
+}

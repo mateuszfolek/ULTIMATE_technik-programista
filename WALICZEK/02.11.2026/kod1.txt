@@ -1,0 +1,155 @@
+using System.IO.Pipes;
+
+namespace Zadanie1
+{
+    public class Program
+    {
+        public static void Main(string[] args)
+        {
+            string napis = Console.ReadLine() ?? "";
+            Console.WriteLine($"Odwrocony tekst: {napis}");
+            Console.WriteLine($"Odwrocony tekst: {OdwrocTekst(napis)}");
+            Console.WriteLine($"Czy Palindrom: {CzyJestPalindrom(napis)}");
+            Console.WriteLine($"Czy Palindrom: {CzyJestPalindrom2(napis)}");
+
+            Console.Write($" Podaj email: ");
+            string login = Console.ReadLine() ?? "";
+            Console.WriteLine();
+            Console.WriteLine($"Login: {PobierzLogin(login)}");
+
+            ZabawaTEXT(napis);
+            ZabawaTEXT2(napis);
+
+        }
+        public static string OdwrocTekst(string tekst)
+        {
+            //Odwracanie i czyszenie tekstu
+            //tim - usuwnaie spacj i enterow
+            string s = tekst.Trim();
+            //zmmiana na tablice
+            char[] chars = s.ToCharArray();
+
+            //odwrocenie tablicy
+            Array.Reverse(chars);
+
+            //new string (tutaj ma byc tablica znakow)
+            return new string(chars);
+        }
+
+        public static bool CzyJestPalindrom(string tekst)
+        {
+            //ala
+
+            //1 petla dzieli tekst na pol
+            for (int i = 0; i < tekst.Length / 2; i++)
+            {
+                //
+                if (tekst[i] != tekst[tekst.Length - 1 - i])
+                {
+                    return false;
+                }
+
+            }
+                return true;
+        }
+        public static string CzyJestPalindrom2(string tekst)
+        {
+
+            string wynik = "";
+            //Odwracanie i czyszenie tekstu
+            //tim - usuwnaie spacj i enterow
+            string s = tekst.Trim();
+            //zmmiana na tablice
+            char[] chars = s.ToCharArray();
+
+            //odwrocenie tablicy
+            Array.Reverse(chars);
+
+
+            //tablica odwrocony
+            string odwocony = new string(chars);
+            //jesli odwrocony tekst jest taki sam jak zwykly tekst to jest to palindrom
+            if (odwocony == tekst)
+            {
+                wynik = "PALINDROM";
+            }
+            else
+            {
+                wynik = "NIE-PALINDROM";
+            }
+
+                return wynik;
+        }
+        public static string PobierzLogin(string tekst)
+        {
+            //wyciaganie nazwy uzytkownika z emaila
+            //arkadiusz@tlen.pl
+            //nazwa uzytkownika: arkadiusz
+
+
+            //oczyszenie z spacji i enterow (trim)
+            //zmiana na male litery (tolower)
+            string s = tekst.Trim().ToLower();
+            //zapisujemy index "@" do zmiennej index
+            int index = s.IndexOf("@"); //int 9
+
+            //jesli "@" jest mniejsza od 0 || przedostatnia || ostatnia
+            if (index<=0 || index == s.Length-1 || index!=s.LastIndexOf('@'))
+            {
+                //to blad
+                return "błąd";
+            }
+            else
+            {
+                //jesli nie to zwroc od indexu 0 do "@" (ale bez niej)
+                return s.Substring(0, index);
+            }
+
+        }
+        public static string PobierzKod (string identyfikator)
+        {
+            //INF04/2026/ABC - zwroc srodkowa czesc
+            //sprawdz czy sa dokladnie 3 niepuste czesci oddzielone znakiem "/"
+            //Split(), Any( funkcje stzalkowa )
+
+            string[] podzielona = identyfikator.Split('/'); // tworzymy tablice dzielac tekst na 3 czesci - ["INF04", "2026", "ABC"]
+
+            //any jest jak foreach, a x to jest kazdy osobny element tablicy
+            //oznacza to to ze zaden element tablicy (x) nie moze miec dlugosci 0
+            //czyli poprostu nie moze byc pusty
+
+
+            //mamy sztywno okreslone dlatego podzielona tablica musi miec 3 czesci (INF04,2026,ABC)
+            if(podzielona.Length!=3 || podzielona.Any(x=>x.Length == 0))
+            {
+                return "blad";
+            }
+            else
+            {
+                return podzielona[1];
+            }
+
+        }
+
+        public static void ZabawaTEXT(string napis)
+        {
+            //zapisuje do zmiennej wynik jaka literka (c) z napisu jest na jakiej pozycji (index)
+            var wynik = napis.Select ((c, index) => $"{c} na pozycji {index}");
+            //dzieli kazde slowo ze zmiennej wynik i wpisuje je do konsoli osobno
+            foreach (var item in wynik)
+            {
+                Console.WriteLine(item);
+            }
+        }
+        public static void ZabawaTEXT2(string napis)
+        {
+            //zapisuje do zmiennej wynik co 2 liczbe z napisu (tylko parzyste)
+            var wynik = napis.Where((c, index) => index % 2 == 0);
+            //concat laczy wszystkie wybrane znaki w 1 napis
+            //z alaba -> a l a b a -> a a a 
+            //concat -> aaa 
+            Console.WriteLine(string.Concat(wynik));
+
+        }
+    }
+}

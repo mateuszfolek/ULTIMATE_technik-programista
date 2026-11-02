@@ -1,0 +1,49 @@
+namespace Zadanie1.Test
+{
+    [TestClass]
+    public sealed class Test1
+    {
+        [TestMethod]
+        public void OdwrocTekst_Test()
+        {
+            ///aaa
+            //arange
+            string napis = "   ABC ";
+            string expected = "CBA";
+
+            //act
+            string actual = Program.OdwrocTekst(napis);
+
+            //assert
+            Assert.AreEqual(expected, actual);
+        }
+
+        [TestMethod]
+        public void CzyJestPalindrom2_Test()
+        {
+            ///aaa
+            //arange
+            string napis = "kajak";
+            bool expected = true;
+
+            //act
+            bool actual = Program.CzyJestPalindrom(napis);
+
+            //assert
+            Assert.AreEqual(expected, actual);
+        }
+
+        [TestMethod]
+        public void PobierzLogin_Test()
+        {
+            ///aaa
+            ///arange
+            string login = "filip@gmail.com";
+            string expected = "filip";
+
+            string actual = Program.PobierzLogin(login);
+
+            Assert.AreEqual(expected, actual);
+        }
+    }
+}

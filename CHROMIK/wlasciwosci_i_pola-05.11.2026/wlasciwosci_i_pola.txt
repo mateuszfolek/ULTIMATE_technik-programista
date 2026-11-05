@@ -1,0 +1,11 @@
+class Program
+{
+    public string wlasciwosc { get; } // WLASCIWOSC
+    public readonly string pole; // POLE
+
+    ~Program()
+    {
+        // DESTRUKTOR (ta tylda - ~)
+    }
+
+}

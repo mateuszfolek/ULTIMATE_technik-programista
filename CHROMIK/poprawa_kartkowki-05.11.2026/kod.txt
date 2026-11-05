@@ -1,0 +1,42 @@
+using System;
+
+namespace galaktyka
+{
+    class CialoNiebieskie
+    {
+        public string obiekt { get; }
+
+        public readonly string nazwa;
+        public readonly string nalezyDo;
+
+        public CialoNiebieskie(string obiekt, string nazwa)
+        {
+            this.obiekt = obiekt;
+            this.nazwa = nazwa;
+        }
+
+        public CialoNiebieskie(string obiekt, string nazwa, string nalezyDo) : this(obiekt, nazwa)
+        {
+            this.nalezyDo = nalezyDo;
+        }
+
+        ~CialoNiebieskie()
+        {
+        }
+    }
+}
+
+namespace aplikacja
+{
+    class program
+    {
+        static void Main(string[] args)
+        {
+            galaktyka.CialoNiebieskie cialoNiebieskie1 =
+                new galaktyka.CialoNiebieskie("kometa", "halleya");
+
+            galaktyka.CialoNiebieskie cialoNiebieskie2 =
+                new galaktyka.CialoNiebieskie("satelita", "phobos", "mars");
+        }
+    }
+}

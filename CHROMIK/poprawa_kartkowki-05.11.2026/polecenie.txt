@@ -1,0 +1,17 @@
+Zadanie poprawkowe:
+
+Utworz:
+1: 
+-przestrzen nazw „galaktyka”, a w nim klase „CialoNiebieskie” zawierajace:
+-publiczna wlasnosc „obiekt” typu string, dajaca sie tylko odczytac
+- publiczne pole „nazwa” typu string, dajace sie tylko odczytac
+- publiczne pole „nalezyDo” typu string, dajace sie tylko odczytac
+- konstruktor, ktory przekazuje argumenty „obiekt” i „nazwa” 
+- konstruktor ktory przekazuje argumenty „obiekt” „nazwa” i „nalezyDo” wywolujac jednoczesnie konstruktor pierwszy
+- destruktor
+
+2:
+- przestrzen nazw „aplikacja” zawierajaca klase „program”
+- utworz obiekty:
+- „cialoNiebieskie1” jako instancje klasy „CialoNiebieskie” przekazujac kolejno argumenty „kometa” oraz „halleya”
+- cialoNiebieskie2 jako instancje klasy CialoNiebieskie przekazujac kolejno argumenty „satelita” „phobos” „mars”

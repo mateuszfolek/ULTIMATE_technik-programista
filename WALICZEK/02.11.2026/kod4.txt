@@ -1,0 +1,58 @@
+using System.ComponentModel.DataAnnotations.Schema;
+using System.Text;
+
+namespace Zadanie3
+{
+    public class Program
+    {
+        public static void Main(string[] args)
+        {
+            const string sciezka = "notatka.txt";
+            Console.OutputEncoding = Encoding.UTF8;
+            while (true)
+            {
+                Console.WriteLine("\n1 Zapisz notatke");
+                Console.WriteLine("2. Odczytaj notatke");
+                Console.WriteLine("0. Zakoncz");
+                Console.Write("Wybor: ");
+                string? wybor = Console.ReadLine();
+                if (wybor == "0") break;
+
+                try
+                {
+                    switch (wybor)
+                    {
+                        case "1":
+                            Console.WriteLine("Podaj tresc notatki");
+                            string tresc = Console.ReadLine() ?? "";
+                            File.WriteAllText(sciezka, tresc, Encoding.UTF8);
+                            Console.WriteLine("Zapisano notatke");
+                            break;
+                        case "2":
+                            if(!File.Exists(sciezka))
+                            { 
+                              Console.WriteLine("Nie ma jeszcze notatki");
+                            }
+                            else
+                            {
+                                Console.WriteLine("Twoja notatka: ");
+                                Console.WriteLine(File.ReadAllText(sciezka, Encoding.UTF8));
+                            }
+                            break;
+                        default:
+                            Console.WriteLine("Nieznana operacja. Wybierz inna");
+                            break;
+                    }
+                }
+                catch(IOException ex)
+                {
+                    Console.WriteLine("Blad pliku: " + ex.Message);
+                }
+                catch(UnauthorizedAccessException ac)
+                {
+                    Console.WriteLine("Blad uprawnien" + ac.Message);
+                }
+            }   
+        }
+    }
+}

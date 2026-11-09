@@ -1,0 +1,122 @@
+using System.Net;
+
+namespace Zadanie2
+{
+    public class Program
+    {
+        public static void Main(string[] args)
+        {
+            //napisz aplikacje o nazwie przedmioty kazdy przedmiot posiada slownik, ktorego kluczem jest nazwisko a wartosc ocena
+            //aplikacja bazuje na klasie szkolnej o nazwie 4ct, oraz na takich przedmiotach jak programowanie, matematyka, fizyka
+            //wyznacz dla danego przedmiotu najlepszego ucznia, srednia ocen i drugiego ucznia pod wzgledem oceny dla danego przedmiotu
+            //zastosuj algo wyszukania nie stosujemy wbudowanych, min, max, avg
+            //do aplikacji dodaj co najmniej 3 testy
+            //dokumentacje zapisz w pliku dokumentacja.txt
+            //dokumentacja: imie i nazwisko, nazwa metod, nazwa klasy
+
+            Dictionary<string, int> programowanie = new Dictionary<string, int>();
+            programowanie.Add("Wrobel", 4);
+            programowanie.Add("Kowalski", 3);
+            programowanie.Add("Nowak", 2);
+            programowanie.Add("Wisniewski", 6);
+            programowanie.Add("Baron", 6);
+
+
+            Dictionary<string, int> matematyka = new Dictionary<string, int>();
+            matematyka.Add("Ulczok", 4);
+            matematyka.Add("Dadok", 2);
+            matematyka.Add("Antecki", 2);
+            matematyka.Add("Pinocy", 1);
+            matematyka.Add("Folek", 1);
+
+            Dictionary<string, int> fizyka = new Dictionary<string, int>();
+            fizyka.Add("Ryba", 1);
+            fizyka.Add("Gruszka", 4);
+            fizyka.Add("Planak", 3);
+            fizyka.Add("Szczerbowski", 6);
+            fizyka.Add("Soloch", 5);
+
+            Console.WriteLine($"Najlepszy z programowania: {najlepszyUczen(programowanie)}");
+            Console.WriteLine($"Drugi najlepszy z programowania: {drugiNajlepszy(programowanie)}");
+
+            Console.WriteLine($"Srednia programowania: {sredniaOcen(programowanie)}");
+
+            Console.WriteLine();
+            Console.WriteLine($"Najlepszy z matematyki: {najlepszyUczen(matematyka)}");
+            Console.WriteLine($"Drugi najlepszy z matematyki: {drugiNajlepszy(matematyka)}");
+
+            Console.WriteLine($"Srednia programowania: {sredniaOcen(matematyka)}");
+
+            Console.WriteLine();
+            Console.WriteLine($"Najlepszy z fizyki: {najlepszyUczen(fizyka)}");
+            Console.WriteLine($"Drugi najlepszy z fizyki: {drugiNajlepszy(fizyka)}");
+
+            Console.WriteLine($"Srednia programowania: {sredniaOcen(fizyka)}");
+
+
+
+        }
+
+        public static string najlepszyUczen(Dictionary<string,int> programowanie)
+        {
+            string nazwisko = "";
+            int no = 0;
+
+            foreach(var ocena in programowanie)
+            {
+
+                if(ocena.Value > no)
+                {
+                    no = ocena.Value;
+                    nazwisko = ocena.Key;
+                }
+            }
+            
+            return nazwisko;
+        }
+
+        public static double sredniaOcen(Dictionary<string,int> programowanie)
+        {
+            double srednia = 0;
+            double sumaOcen = 0;
+
+            foreach (var ocena in programowanie)
+            {
+                sumaOcen += ocena.Value;
+
+            }
+                srednia = sumaOcen / programowanie.Count;
+
+            return srednia;
+        }
+
+        public static string drugiNajlepszy(Dictionary<string, int> programowanie)
+        {
+            int najwyzsza = -1;
+            int drugaNajwyzsza = -1;
+
+            string najlepszyNazwisko = "";
+            string drugiNajlepszyNazwisko = "";
+
+            foreach (var ocena in programowanie)
+            {
+                if (ocena.Value > najwyzsza)
+                {
+                    drugaNajwyzsza = najwyzsza;
+                    drugiNajlepszyNazwisko = najlepszyNazwisko;
+
+                    najwyzsza = ocena.Value;
+                    najlepszyNazwisko = ocena.Key;
+                }
+                else if (ocena.Value > drugaNajwyzsza)
+                {
+                    drugaNajwyzsza = ocena.Value;
+                    drugiNajlepszyNazwisko = ocena.Key;
+                }
+            }
+
+            return drugiNajlepszyNazwisko;
+        }
+
+    }
+}

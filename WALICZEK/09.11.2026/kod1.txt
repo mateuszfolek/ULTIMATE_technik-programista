@@ -1,0 +1,64 @@
+namespace Zadanie1
+{
+    public class Program
+    {
+        public static void Main(string[] args)
+        {
+            //Dictionary
+            //Talica asocjacyjna "assoc": tablica ["klucz"] = "wartosc"
+            //tablica[0] = 2;
+            //Dictionary<klucz, wartosc>
+            //<T> - wartosc dynamiczna dla danego typu List
+            // <T,T> - wartosci dynamiczne
+            //Dictionary<int, string> map = new Dictionary<int, string>();
+            //Dictionary<string, string> keyValuePairs= new Dictionary<string, string>();
+
+            Dictionary<string,string> slownik1 = new Dictionary<string, string>();
+            slownik1.Add("Katowice1", "Ul. Broniewskiego 1");
+            slownik1.Add("Katowice2", "Ul. Slowackiego 14");
+            slownik1.Add("Katowice3", "Ul. Powstancow 25");
+            slownik1.Add("Pszczyna1", "Ul. Powstancow 25");
+            slownik1.Add("Pszczyna2", "Ul. Powstancow 250");
+
+            Console.WriteLine($"{PobierzZSlownika(slownik1)}");
+            Console.WriteLine(string.Join("",PobierzSlownik(slownik1)));
+
+            foreach(var item in slownik1)
+            {
+                Console.WriteLine($"Klucz: {item.Key} wartosc: {item.Value}");
+            }
+
+            Console.WriteLine();
+            foreach(var sl in slownik1)
+            {
+                if (sl.Key.StartsWith("Pszczyna"))
+                {
+                Console.WriteLine($"Klucz: {sl.Key} wartosc: {sl.Value}");
+
+                }
+            }
+
+        }
+
+        //zwracamy string
+        public static string PobierzZSlownika(Dictionary<string, string> mojslownik)
+        {
+            string wynik = mojslownik["Katowice1"];
+
+            return wynik;
+        }
+
+        public static Dictionary<string,string> PobierzSlownik(Dictionary<string,string> mojslownik)
+        {
+            return mojslownik;
+        }
+
+        //napisz aplikacje o nazwie przedmioty kazdy przedmiot posiada slownik, ktorego kluczem jest nazwisko a wartosc ocena
+        //aplikacja bazuje na klasie szkolnej o nazwie 4ct, oraz na takich przedmiotach jak programowanie, matematyka, fizyka
+        //wyznacz dla danego przedmiotu najlepszego ucznia, srednia ocen i drugiego ucznia pod wzgledem oceny dla danego przedmiotu
+        //zastosuj algo wyszukania nie stosujemy wbudowanych, min, max, avg
+        //do aplikacji dodaj co najmniej 3 testy
+        //dokumentacje zapisz w pliku dokumentacja.txt
+        //dokumentacja: imie i nazwisko, nazwa metod, nazwa klasy
+    }
+}

@@ -1,0 +1,60 @@
+using System.Reflection.Emit;
+using System.Text;
+using System.Windows;
+using System.Windows.Controls;
+using System.Windows.Data;
+using System.Windows.Documents;
+using System.Windows.Input;
+using System.Windows.Media;
+using System.Windows.Media.Imaging;
+using System.Windows.Navigation;
+using System.Windows.Shapes;
+using static WpfApp1.MainWindow;
+
+namespace WpfApp1
+{
+    /// <summary>
+    /// Interaction logic for MainWindow.xaml
+    /// </summary>
+    public partial class MainWindow : Window, IOkno
+    {
+        public string TekstDanych { get; set; }
+        public MainWindow()
+        {
+            InitializeComponent();
+        }
+
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+
+            //sprawdzanie co zostalo wybrane w comboboxie
+            if (boxik.SelectedItem is ComboBoxItem selectedItem)
+            {
+
+                //zapisanie wyboru z comboboxa do zmiennej selecteditem
+                string comboboxItem = selectedItem.Content.ToString();
+
+                //utworzenie 2 okna
+                Element element = new Element();
+
+                
+                if (element is IOkno oknoInterfejs)
+                {
+                    //utworzenie elementu w 2 oknie
+                    oknoInterfejs.TekstDanych = comboboxItem + " dziala";
+                }
+
+                //otwarcie okna
+                element.ShowDialog();
+            }
+
+        }
+
+    }
+}
+public interface IOkno
+{
+    string TekstDanych { get; set; }
+
+}

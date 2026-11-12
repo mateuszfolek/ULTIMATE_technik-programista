@@ -1,0 +1,86 @@
+class Program
+{
+    static void Main(string[] args)
+    {
+        IAdminRights repository_admin = new DatabaseRepository();
+        IUserRights repository_uczen = new DatabaseRepository();
+
+
+        DatabaseReaderUser reader = new(repository_uczen);
+        DatabaseAdministratorUser databaseAdministratorUser = new(repository_admin);
+    }
+}
+public class DatabaseRepository : IAdminRights, IUserRights
+{
+    public string userName { get; set; }
+    public string password { get; set; }
+    public void WriteToDatabase()
+    {
+        Console.WriteLine("Writting to database");
+    }
+    public void ReadFromDatabase()
+    {
+        Console.WriteLine("Reading to databases");
+
+    }
+    public void DeleteFromDatabase()
+    {
+        Console.WriteLine("Deleting to database");
+    }
+}
+public interface IAdminRights
+{
+    string userName { get; set; }
+    string password { get; set; }
+    void ReadFromDatabase();
+
+    void DeleteFromDatabase();
+
+    void WriteToDatabase();
+}
+public interface IUserRights
+{
+    void ReadFromDatabase();
+}
+public class DatabaseReaderUser
+{
+    private readonly IUserRights? repository;
+    private readonly ILog? log;
+    public DatabaseReaderUser(IUserRights? repository)
+    {
+        this.repository = repository;
+        this.log = log;
+    }
+}
+public class DatabaseAdministratorUser
+{
+    private readonly IAdminRights? repository;
+    public DatabaseAdministratorUser(IAdminRights? repository)
+    {
+        this.repository = repository;
+
+    }
+
+}
+
+public class log : ILog
+{
+    private void CreateDirectory()
+    {
+
+    }
+
+    private void AddToQueue()
+    {
+
+    }
+    public void WriteToLog(string message)
+    {
+
+    }
+}
+
+public interface ILog
+{
+    void WriteToLog(string message);
+}

@@ -1,0 +1,59 @@
+MAIN WINDOW:
+using System.Windows;
+using System.Windows.Controls;
+
+namespace WpfApp1
+{
+    public interface IAktywujOkno
+    {
+        void UstawLabel(string tekst);
+        void Show();
+    }
+
+    public partial class MainWindow : Window
+    {
+        public MainWindow()
+        {
+            InitializeComponent();
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            IAktywujOkno okno = new Element();
+            okno.UstawLabel(ComboBox.Text);
+            okno.Show();
+        }
+
+        private void ComboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        { 
+        }
+    }
+}
+
+
+
+
+
+
+
+ELEMENT:
+using System.Windows;
+
+namespace WpfApp1
+{
+    public partial class Element : Window, IAktywujOkno
+    {
+        public Element()
+        {
+            InitializeComponent();
+        }
+
+        public void UstawLabel(string tekst)
+        {
+            Aktywacja.Content = tekst + " działa";
+        }
+    }
+}
+
+
+(label w elemencie to "Aktywacja")

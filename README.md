@@ -8,4 +8,5 @@
     - 26.10.10-Nazwa_pliku.txt
 
  ## DLACZEGO?
-    - Dzięki temu możemy dużo łatwiej sortować pliki datą, gdybyśmy odwrócili zapis: DD.MM.YY to sortowanie już nie zadziała należycie
+    - Dzięki temu możemy dużo łatwiej sortować pliki datą,
+    gdybyśmy odwrócili zapis: DD.MM.YY to sortowanie już nie zadziała należycie

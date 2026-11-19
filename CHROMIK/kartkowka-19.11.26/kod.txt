@@ -1,0 +1,82 @@
+public class Program
+{
+    static void Main(string[] args)
+    {
+        IAdministrator administrator = new Biblioteka();
+        IUzytkownik uzytkownik = new Biblioteka();
+
+        //Pracownik pracownik = new Pracownik((Biblioteka)administrator);
+        //Pracownik pracownik = new Pracownik((Biblioteka)uzytkownik);
+
+        Pracownik pracownik = new Pracownik(uzytkownik);
+    }
+}
+
+public class Biblioteka : IAdministrator,IUzytkownik
+{
+    public void Wypozycz()
+    {
+        Console.WriteLine("Wypożyczam książkę");
+    }
+    public void Zwroc()
+    {
+        Console.WriteLine("Zwracam książkę");
+    }
+}
+
+public class Pracownik
+{
+    private readonly IAdministrator? administrator;
+    private readonly IUzytkownik? uzytkownik;
+
+    private readonly Biblioteka? biblioteka;
+
+    public Pracownik(Biblioteka uzytkownik)
+    {
+        this.biblioteka = uzytkownik;
+
+        Wypozycz();
+        Zwroc();
+    }
+
+    public Pracownik(IAdministrator? administrator)
+    {
+        this.administrator = administrator;
+
+        Wypozycz();
+        Zwroc();
+    }
+
+    public Pracownik(IUzytkownik uzytkownik)
+    {
+        this.uzytkownik = uzytkownik;
+
+        Wypozycz();
+        Zwroc();
+    }
+
+    private void Wypozycz()
+    {
+        biblioteka?.Wypozycz();
+        administrator?.Wypozycz();
+    }
+
+    private void Zwroc()
+    {
+        biblioteka?.Zwroc();
+        uzytkownik?.Zwroc();
+        administrator?.Zwroc();
+    }
+}
+
+public interface IAdministrator
+{
+    void Wypozycz();
+
+    void Zwroc();
+}
+
+public interface IUzytkownik
+{
+    void Zwroc();
+}

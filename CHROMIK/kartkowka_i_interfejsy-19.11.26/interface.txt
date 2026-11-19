@@ -1,0 +1,89 @@
+
+
+public class Program
+{
+    static void Main(string[] args)
+    {
+        Obiekt obiekt= new Obiekt(1);
+        PuszkaZObiektem puszkaZObiektem = new PuszkaZObiektem(obiekt);
+
+        Console.WriteLine(puszkaZObiektem.ZwrocNumerObiektu);
+        Console.WriteLine(puszkaZObiektem.obiekt.dataUtworzenia); 
+        
+        Thread.Sleep(1000);
+
+        IObiekt obiekt1 = new Obiekt(1); //Utworzyło nam kolejny obiekt
+        Console.WriteLine(obiekt1.dataUtworzenia);
+
+        PuszkaZObiektemLimitowanyDostep puszkaZObiektemLimitowanyDostep = new PuszkaZObiektemLimitowanyDostep(obiekt);
+        Console.WriteLine(puszkaZObiektemLimitowanyDostep.obiekt.dataUtworzenia);
+
+        Console.ReadLine(); 
+    }
+}
+
+public class Obiekt : IObiekt
+{
+    private readonly int numerObiektu;
+
+    public string? dataUtworzenia { get; }
+
+    public Obiekt(int numerObiektu)
+    {
+        this.numerObiektu = numerObiektu;
+        dataUtworzenia = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss.fff");
+    }
+
+    public int ZwrocNumerObiektu()
+    {
+        return numerObiektu;
+    }
+}
+
+public interface IObiekt
+{
+    string? dataUtworzenia { get; }
+    int ZwrocNumerObiektu();
+}
+
+public class PuszkaZObiektem
+{
+    public Obiekt obiekt;
+
+    public PuszkaZObiektem(Obiekt obiekt)
+    {
+        this.obiekt = obiekt;
+    }
+
+    public int ZwrocNumerObiektu()
+    {
+        return obiekt.ZwrocNumerObiektu();
+    }
+
+    public string ZwrocDateUtworzenia()
+    {
+        return obiekt.dataUtworzenia;
+    }
+}
+
+public class PuszkaZObiektemLimitowanyDostep
+{
+    public IObiekt? obiekt;
+    public PuszkaZObiektemLimitowanyDostep(IObiekt? obiekt)
+    {
+        this.obiekt=obiekt;
+    }
+
+    public int ZwrocNumerObiektu()
+    {
+        return obiekt.ZwrocNumerObiektu();
+    }
+
+    public string ZwrocDateUtworzenia()
+    {
+        return obiekt.dataUtworzenia;
+    }
+
+}
+
+

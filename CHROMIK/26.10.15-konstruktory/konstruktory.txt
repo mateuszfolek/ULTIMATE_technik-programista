@@ -1,0 +1,100 @@
+class Program
+{
+    static void Main(string[] args)
+    {
+        NowaKlasa nowaKlasa = new(7);
+        Ksiazka ksiazka = new Ksiazka("Adam Mickiewicz", "Dziady");
+        Czlowiek czlowiek = new("123455764367");
+        czlowiek._dataUrodzenia = 2026;
+
+        Czlowiek czlowiek2 = new("09876543212") { _dataUrodzenia = 2026 };
+
+        DestruktorTest destruktorTest = new();
+
+    }
+}
+class NowaKlasa
+{
+    private int dzienTygodnia=0;
+    public NowaKlasa(int dzienTygodnia)
+    {
+        this.dzienTygodnia = dzienTygodnia;
+    }
+
+    public void PrzypiszDzienTygodnia(int dzienTygodnia)
+    {
+        this.dzienTygodnia = dzienTygodnia;
+    }
+}
+
+class Ksiazka
+{
+    private string autor = "";
+    private string tytul = "";
+    private string rokWydania = "";
+
+    public Ksiazka(string autor, string tytul)
+    {
+        Console.WriteLine("Wywołuje konstruktor nr 1");
+        this.autor = autor;
+        this.tytul = tytul;
+   
+
+    }
+    public Ksiazka(string autor, string tytul, string rokWydania) : this (autor,tytul)
+    {
+        Console.WriteLine("Wywołuje konstruktor nr 2");
+
+        this.rokWydania = rokWydania;
+
+
+    }
+}
+class Czlowiek
+{
+    private string nrPesel;
+    private string imie;
+    private int? dataUrodzenia;
+
+    public string _imie {
+        get { return imie; } 
+        set { imie = value; }
+    }
+    public int? _dataUrodzenia
+    {
+        get { return dataUrodzenia; }
+        set
+        {
+            if (value <= DateTime.Now.Year)
+            {
+                dataUrodzenia = value;
+            }
+            else
+            {
+                dataUrodzenia = null;
+            }
+            
+        }
+    }
+    public Czlowiek(string nrPesel)
+    { 
+        this.nrPesel = nrPesel;
+    }
+
+    public string ZwrocNrPesel()
+    {
+        return nrPesel;
+    }
+}
+
+class DestruktorTest
+{
+    public DestruktorTest()
+    {
+
+    }
+    ~DestruktorTest()
+    {
+        Console.WriteLine();
+    }
+}

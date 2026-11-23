@@ -1,0 +1,61 @@
+<Window x:Class="Kalkulator.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Kalkulator"
+        mc:Ignorable="d"
+        Title="Kalkulator Ver. 1" Height="380" Width="400" WindowStartupLocation="CenterScreen">
+    <StackPanel>
+        <TextBlock 
+            Text="Kalkulator Ver 1 - INF04"
+            FontSize="24"
+            FontWeight="Bold"
+            HorizontalAlignment="Center"
+            Margin="0, 0, 0, 20"
+        />
+        <TextBox
+            x:Name="txtLiczba1"
+            FontSize="20"
+            Margin="0,5"
+            TextAlignment="Center"
+        />
+        <TextBox
+            x:Name="txtLiczba2"
+            FontSize="20"
+            Margin="0,5"
+            TextAlignment="Center"
+        />
+        <TextBox
+    x:Name="txtLiczba3"
+    FontSize="20"
+    Margin="0,5"
+    TextAlignment="Center"
+        />
+        <TextBox
+    x:Name="txtLiczba4"
+    FontSize="20"
+    Margin="0,5"
+    TextAlignment="Center"
+/>
+        <UniformGrid Columns="4" Margin="0, 20, 0 ,10">
+            <Button Content="+" Click="Button_Click_1"/>
+            <Button Content="-" Click="Button_Click_2"/>
+            <Button Content="*" Click="Button_Click_3"/>
+            <Button Content="/" Click="Button_Click_4"/>
+        </UniformGrid>
+        <TextBlock
+            Text="Wynik: "
+            HorizontalAlignment="Center"
+            />
+        <TextBox
+            x:Name="Wynik"
+            FontSize="24"
+            IsReadOnly="True"
+            TextAlignment="Center"
+            />
+        <Button Content="Ep" Click="Button_Click"/>
+        <Button Content="Ek" Click="Button_Click_5"/>
+        <Button Content="Em" Click="Button_Click_6"/>
+    </StackPanel>
+</Window>

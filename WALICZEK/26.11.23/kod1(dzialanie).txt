@@ -1,0 +1,105 @@
+using System.Text;
+using System.Windows;
+using System.Windows.Controls;
+using System.Windows.Data;
+using System.Windows.Documents;
+using System.Windows.Input;
+using System.Windows.Media;
+using System.Windows.Media.Imaging;
+using System.Windows.Navigation;
+using System.Windows.Shapes;
+
+namespace Kalkulator
+{
+    /// <summary>
+    /// Interaction logic for MainWindow.xaml
+    /// </summary>
+    public partial class MainWindow : Window
+    {
+        public MainWindow()
+        {
+            InitializeComponent();
+        }
+
+        private bool PobierzLiczby(out double liczba1, out double liczba2, out double liczba3, out double liczba4)
+        {
+            bool poprawne = double.TryParse(txtLiczba1.Text, out liczba1) &
+                double.TryParse(txtLiczba2.Text, out liczba2) &
+                double.TryParse(txtLiczba3.Text, out liczba3) &
+                double.TryParse(txtLiczba4.Text, out liczba4);
+            {
+                MessageBox.Show("Podaj poprawne liczby", "Info", MessageBoxButton.OK);
+            }
+
+            return poprawne;
+        }
+
+        
+        //dodawanie
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            if (PobierzLiczby(out double a, out double b, out double c, out double d))
+            {
+                Wynik.Text = (a + b).ToString();
+            }
+        }
+        //odejmowanie
+        private void Button_Click_2(object sender, RoutedEventArgs e)
+        {
+            if (PobierzLiczby(out double a, out double b, out double c, out double d))
+            {
+                Wynik.Text = (a - b).ToString();
+            }
+        }
+
+        //mnozenie
+        private void Button_Click_3(object sender, RoutedEventArgs e)
+        {
+            if (PobierzLiczby(out double a, out double b, out double c, out double d))
+            {
+                Wynik.Text = (a * b).ToString();
+            }
+        }
+
+        //dzielenie
+        private void Button_Click_4(object sender, RoutedEventArgs e)
+        {
+
+            if (PobierzLiczby(out double a, out double b, out double c, out double d))
+            {
+                return;
+            }
+            if (b == 0)
+            {
+                MessageBox.Show("Nie diel szlachcicu przez 0", "", MessageBoxButton.OK);
+                return;
+            }
+            Wynik.Text = (a / b).ToString();
+        }
+
+        //ep
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            if (PobierzLiczby(out double a, out double b, out double c, out double d))
+            {
+                Wynik.Text = (a* b * c).ToString();
+            }
+        }
+        //ek
+        private void Button_Click_5(object sender, RoutedEventArgs e)
+        {
+            if (PobierzLiczby(out double a, out double b, out double c, out double d))
+            {
+                Wynik.Text = (  (a * (d*d)) /2 ).ToString();
+            }
+        }
+        //em
+        private void Button_Click_6(object sender, RoutedEventArgs e)
+        {
+            if (PobierzLiczby(out double a, out double b, out double c, out double d))
+            {
+                Wynik.Text = ((a * b * c) + ((a * (d * d)) / 2)).ToString();
+            }
+        }
+    }
+}

@@ -1,0 +1,50 @@
+	<Window x:Class="AnalizaTekstu.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:AnalizaTekstu"
+        mc:Ignorable="d"
+        Title="Analizator tekstu"
+        Height="450"
+        Width="570">
+
+    <StackPanel Margin="20">
+
+        <TextBlock Text="Wpisz tekst:"
+                   FontWeight="Bold"
+                   Margin="0,0,0,5"/>
+
+        <TextBox x:Name="txtTekst"
+                 Height="110"
+                 AcceptsReturn="True"
+                 TextWrapping="Wrap"
+                 VerticalScrollBarVisibility="Auto"/>
+
+        <Button Content="Analizuj"
+                Margin="0,12"
+                Padding="10"
+                Click="Analizuj_tekst"/>
+
+        <TextBlock x:Name="lblZnaki"
+                   Text="Liczba znaków: "
+                   Margin="0,5"/>
+
+        <TextBlock x:Name="lblBezSpacji"
+                   Text="Liczba znaków bez spacji: "
+                   Margin="0,5"/>
+
+        <TextBlock x:Name="lblSlowa"
+                   Text="Liczba słów: "
+                   Margin="0,5"/>
+
+        <TextBlock x:Name="lblSamogloski"
+                   Text="Liczba samogłosek: "
+                   Margin="0,5"/>
+
+        <TextBlock x:Name="lblwiersze"
+                   Text="Liczba wierszy: "
+                   Margin="0,5"/>
+
+    </StackPanel>
+</Window>
